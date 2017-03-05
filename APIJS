@@ -1,0 +1,9 @@
+$(document).ready(function() {
+
+  var api = "https://api.digitalmedia.hhs.gov/api/v2/resources/campaigns.json";
+
+  //get data from public API web and put it into code
+  $.getJSON(api, function(data) {
+    alert(data.name);
+  });
+});
